@@ -31,29 +31,25 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<Map<String, String>> places = [
     {
       'name': 'Baturaden',
-      'image':
-          'https://media-cdn.tripadvisor.com/media/photo-s/0c/e4/37/94/the-baturaden-fountain.jpg',
+      'image': 'assets/images/baturaden1.jpg',
       'description':
           'Baturaden adalah objek wisata alam di lereng Gunung Slamet dengan pemandangan indah dan udara sejuk.',
     },
     {
       'name': 'Curug Cipendok',
-      'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvq3f6dJ2l9euM8EC8-lnY7WLbf2wBSZSYjg&s',
+      'image': 'assets/images/curugdipendok.jpeg',
       'description':
           'Curug Cipendok adalah air terjun yang megah dan terkenal dengan keindahan alam serta sejuknya udara pegunungan.',
     },
     {
       'name': 'Telaga Sunyi',
-      'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH-1l7XQzDy4Rpd0W_K_A0KQop4TUDErt8Zg&s',
+      'image': 'assets/images/taman.jpeg',
       'description':
           'Telaga Sunyi adalah tempat wisata alam yang menyajikan ketenangan dengan air yang jernih dan suasana asri.',
     },
     {
       'name': 'Taman Andhang Pangrenan',
-      'image':
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLUz27VNWMGIfJr3pUvlYQoyJvQwJnVh9QA&s',
+      'image': 'assets/images/telagasunyi.jpeg',
       'description':
           'Taman kota yang cocok untuk rekreasi keluarga dengan berbagai fasilitas umum yang menarik.',
     }
@@ -73,7 +69,8 @@ class _MyHomePageState extends State<MyHomePage> {
           return Card(
             margin: const EdgeInsets.all(10),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center, // Mengatur seluruh konten ke tengah
+              crossAxisAlignment: CrossAxisAlignment
+                  .center, // Mengatur seluruh konten ke tengah
               children: [
                 Center(
                   child: Image.network(
@@ -83,7 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10),
-                  child: Center(  // Menempatkan teks judul di tengah
+                  child: Center(
+                    // Menempatkan teks judul di tengah
                     child: Text(
                       places[index]['name']!,
                       style: const TextStyle(
@@ -95,11 +93,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Center(  // Menempatkan deskripsi di tengah
+                  child: Center(
+                    // Menempatkan deskripsi di tengah
                     child: Text(
                       places[index]['description']!,
                       style: const TextStyle(fontSize: 16),
-                      textAlign: TextAlign.center,  // Teks rata tengah
+                      textAlign: TextAlign.center, // Teks rata tengah
                     ),
                   ),
                 ),
