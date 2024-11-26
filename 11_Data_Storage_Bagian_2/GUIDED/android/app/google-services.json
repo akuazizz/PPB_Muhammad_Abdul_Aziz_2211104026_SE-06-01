@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "394191727185",
+    "project_id": "praktikum-fcn",
+    "storage_bucket": "praktikum-fcn.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394191727185:android:1118d1a52977f3195d6670",
+        "android_client_info": {
+          "package_name": "com.example.fcn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABtZ6ZVsdKWya0oUSII1uLHXyAdwI_loI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
